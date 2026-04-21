@@ -1,0 +1,77 @@
+:root {
+  --bg: #101014;
+  --card: #18181f;
+  --text: #f5f5f7;
+  --accent: #e50914;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #0b0b0f, #151521);
+  color: var(--text);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #2e2e3a;
+}
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem 2rem;
+}
+
+.card {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.row,
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input,
+button {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #353546;
+  background: #111119;
+  color: var(--text);
+}
+
+button {
+  cursor: pointer;
+  background: var(--accent);
+  border: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.8rem;
+}
+
+.movie {
+  background: #20202b;
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+.movie h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
+}

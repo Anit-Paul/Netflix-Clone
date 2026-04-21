@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone Full Stack</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Netflix+ Demo</h1>
+      <div id="user-bar" class="hidden">
+        <span id="welcome"></span>
+        <button id="logout">Logout</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="auth-section" class="card">
+        <h2>Login / Register</h2>
+        <form id="auth-form">
+          <input type="text" id="name" placeholder="Name (for register)" />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="password" id="password" placeholder="Password (min 8)" required />
+          <div class="actions">
+            <button type="submit" data-mode="login">Login</button>
+            <button type="submit" data-mode="register">Register</button>
+          </div>
+        </form>
+        <p id="auth-message"></p>
+      </section>
+
+      <section id="app-section" class="hidden">
+        <div class="card">
+          <h2>Browse Catalog</h2>
+          <div class="row">
+            <input id="search" type="text" placeholder="Search title" />
+            <button id="search-btn">Search</button>
+            <button id="reset-btn">Reset</button>
+          </div>
+          <div id="movies" class="grid"></div>
+        </div>
+
+        <div class="card">
+          <h2>Your Watchlist</h2>
+          <div id="watchlist" class="grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
